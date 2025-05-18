@@ -4,7 +4,7 @@ arr = list(map(int, input().split()))
 for k in range(6):
     arr_new = [[],[],[],[],[],[],[],[],[],[]]
     for i in range(len(arr)):
-        digit = arr[i]%(10^k)
+        digit = int(arr[i]/(10^k))%10
         arr_new[digit-1].append(arr[i])
     store_arr = []
 
