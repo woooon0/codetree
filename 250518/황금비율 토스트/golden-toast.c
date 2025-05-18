@@ -20,7 +20,10 @@ int main(){
                 for(int mn = maxn;n<mn;mn--){
                     s[mn] = s[mn-1];
                 }
+                s[n] = bread;
+                n++;
             }
+            maxn++;
         }
         if(command == 'L'){
             if(n != 0){
@@ -30,18 +33,18 @@ int main(){
         if(command == 'R'){
             if(n != maxn){
                 n ++;
+            }
         }
         if(command == 'D'){
             if(n != maxn){
-                for(n;n=<maxn;n++){
+                for(n;n<=maxn;n++){
                     s[n] = s[n+1];
                 }
             }
         }
     }
-
-
-    
+    printf("%s",s);
+  
     // Please write your code here.
     return 0;
 }
