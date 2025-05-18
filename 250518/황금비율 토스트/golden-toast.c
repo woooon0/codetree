@@ -37,8 +37,8 @@ int main(){
         }
         if(command == 'D'){
             if(n != maxn){
-                for(n;n<=maxn;n++){
-                    s[n] = s[n+1];
+                for(int tn = n;tn<=maxn;tn++){
+                    s[tn] = s[tn+1];
                 }
                 maxn--;
             }
