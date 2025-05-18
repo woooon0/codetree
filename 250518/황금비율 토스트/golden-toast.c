@@ -40,6 +40,7 @@ int main(){
                 for(n;n<=maxn;n++){
                     s[n] = s[n+1];
                 }
+                maxn--;
             }
         }
     }
