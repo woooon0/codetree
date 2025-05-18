@@ -1,11 +1,12 @@
+
 n = int(input())
 arr = list(map(int, input().split()))
 
 for k in range(6):
     arr_new = [[],[],[],[],[],[],[],[],[],[]]
     for i in range(len(arr)):
-        digit = int(arr[i]/(10^k))%10
-        arr_new[digit-1].append(arr[i])
+        digit = (arr[i]//10**k)%10
+        arr_new[digit].append(arr[i])
     store_arr = []
 
     for i in range(10):
@@ -15,7 +16,6 @@ for k in range(6):
     arr = store_arr
 
 print(*arr,sep=' ')
-
 
 
 # Please write your code here.
