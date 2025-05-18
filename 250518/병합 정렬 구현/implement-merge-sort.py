@@ -30,6 +30,7 @@ def merge_sort(arr):
             arr[k] = R[j]
             j += 1
             k += 1
+merge_sort(arr)
 print(*arr,sep=' ')
 
 
