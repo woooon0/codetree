@@ -5,7 +5,7 @@ for k in range(6):
     arr_new = [[],[],[],[],[],[],[],[],[],[]]
     for i in range(len(arr)):
         digit = arr[i]%(10^k)
-        arr_new[digit].append(arr[i])
+        arr_new[digit-1].append(arr[i])
     store_arr = []
 
     for i in range(10):
