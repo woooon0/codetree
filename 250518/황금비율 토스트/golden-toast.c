@@ -15,6 +15,7 @@ int main(){
             scanf(" %c", &bread);
             if(n ==maxn){
                 s[n] = bread;
+                n++;
             }
             else{
                 for(int mn = maxn;n<mn;mn--){
